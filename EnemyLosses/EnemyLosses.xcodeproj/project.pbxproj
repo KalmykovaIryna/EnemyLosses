@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA362F3528758794001A4DBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA362F3428758794001A4DBD /* AppDelegate.swift */; };
+		CA362F3728758794001A4DBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA362F3628758794001A4DBD /* SceneDelegate.swift */; };
+		CA362F3928758794001A4DBD /* DateDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA362F3828758794001A4DBD /* DateDescriptionViewController.swift */; };
+		CA362F3C28758794001A4DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA362F3A28758794001A4DBD /* Main.storyboard */; };
+		CA362F412875879D001A4DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA362F3F2875879D001A4DBD /* LaunchScreen.storyboard */; };
+		CA362F4928758D18001A4DBD /* LossesOfEquipmentsAndPersonnels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA362F4828758D18001A4DBD /* LossesOfEquipmentsAndPersonnels.swift */; };
+		CA362F4C2875A3C7001A4DBD /* DescriptionByDateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA362F4A2875A3C7001A4DBD /* DescriptionByDateTableViewCell.swift */; };
+		CA362F4D2875A3C7001A4DBD /* DescriptionByDateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA362F4B2875A3C7001A4DBD /* DescriptionByDateTableViewCell.xib */; };
+		CA362F4F2875A629001A4DBD /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA362F4E2875A629001A4DBD /* RootViewController.swift */; };
+		CA362F542875AE66001A4DBD /* ArmyEquipmentsLosses.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA362F532875AE66001A4DBD /* ArmyEquipmentsLosses.swift */; };
+		CA362F562875B0F7001A4DBD /* PersonnelLosses.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA362F552875B0F7001A4DBD /* PersonnelLosses.swift */; };
+		CA362F5928761076001A4DBD /* RootViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA362F5728761076001A4DBD /* RootViewControllerCell.swift */; };
+		CA362F5A28761076001A4DBD /* RootViewControllerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA362F5828761076001A4DBD /* RootViewControllerCell.xib */; };
+		CA362F5E2876D341001A4DBD /* russia_losses_equipment.json in Resources */ = {isa = PBXBuildFile; fileRef = CA362F5C2876D341001A4DBD /* russia_losses_equipment.json */; };
+		CA362F5F2876D341001A4DBD /* russia_losses_personnel.json in Resources */ = {isa = PBXBuildFile; fileRef = CA362F5D2876D341001A4DBD /* russia_losses_personnel.json */; };
+		CA362F612876FBF6001A4DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA362F602876FBF6001A4DBD /* Assets.xcassets */; };
+		CA362F66287822E5001A4DBD /* ByDateModeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA362F64287822E5001A4DBD /* ByDateModeTableViewCell.swift */; };
+		CA362F67287822E5001A4DBD /* ByDateModeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA362F65287822E5001A4DBD /* ByDateModeTableViewCell.xib */; };
+		CA362F6A287C7BAD001A4DBD /* TypeDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA362F69287C7BAD001A4DBD /* TypeDescriptionViewController.swift */; };
+		CA362F6D287C7C04001A4DBD /* DescriptionByTypeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA362F6B287C7C04001A4DBD /* DescriptionByTypeTableViewCell.swift */; };
+		CA362F6E287C7C04001A4DBD /* DescriptionByTypeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA362F6C287C7C04001A4DBD /* DescriptionByTypeTableViewCell.xib */; };
+		CACFA53A288083390037388B /* CellFactoryForRootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFA539288083390037388B /* CellFactoryForRootVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA362F3128758794001A4DBD /* EnemyLosses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnemyLosses.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA362F3428758794001A4DBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CA362F3628758794001A4DBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CA362F3828758794001A4DBD /* DateDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDescriptionViewController.swift; sourceTree = "<group>"; };
+		CA362F3B28758794001A4DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA362F402875879D001A4DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA362F422875879D001A4DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA362F4828758D18001A4DBD /* LossesOfEquipmentsAndPersonnels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossesOfEquipmentsAndPersonnels.swift; sourceTree = "<group>"; };
+		CA362F4A2875A3C7001A4DBD /* DescriptionByDateTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionByDateTableViewCell.swift; sourceTree = "<group>"; };
+		CA362F4B2875A3C7001A4DBD /* DescriptionByDateTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionByDateTableViewCell.xib; sourceTree = "<group>"; };
+		CA362F4E2875A629001A4DBD /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		CA362F532875AE66001A4DBD /* ArmyEquipmentsLosses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArmyEquipmentsLosses.swift; sourceTree = "<group>"; };
+		CA362F552875B0F7001A4DBD /* PersonnelLosses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonnelLosses.swift; sourceTree = "<group>"; };
+		CA362F5728761076001A4DBD /* RootViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerCell.swift; sourceTree = "<group>"; };
+		CA362F5828761076001A4DBD /* RootViewControllerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RootViewControllerCell.xib; sourceTree = "<group>"; };
+		CA362F5C2876D341001A4DBD /* russia_losses_equipment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = russia_losses_equipment.json; sourceTree = "<group>"; };
+		CA362F5D2876D341001A4DBD /* russia_losses_personnel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = russia_losses_personnel.json; sourceTree = "<group>"; };
+		CA362F602876FBF6001A4DBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA362F64287822E5001A4DBD /* ByDateModeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ByDateModeTableViewCell.swift; sourceTree = "<group>"; };
+		CA362F65287822E5001A4DBD /* ByDateModeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ByDateModeTableViewCell.xib; sourceTree = "<group>"; };
+		CA362F69287C7BAD001A4DBD /* TypeDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeDescriptionViewController.swift; sourceTree = "<group>"; };
+		CA362F6B287C7C04001A4DBD /* DescriptionByTypeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionByTypeTableViewCell.swift; sourceTree = "<group>"; };
+		CA362F6C287C7C04001A4DBD /* DescriptionByTypeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DescriptionByTypeTableViewCell.xib; sourceTree = "<group>"; };
+		CACFA539288083390037388B /* CellFactoryForRootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellFactoryForRootVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA362F2E28758794001A4DBD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA12ED8928849045004FF221 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				CACFA539288083390037388B /* CellFactoryForRootVC.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		CA362F2828758794001A4DBD = {
+			isa = PBXGroup;
+			children = (
+				CA362F3328758794001A4DBD /* EnemyLosses */,
+				CA362F3228758794001A4DBD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA362F3228758794001A4DBD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA362F3128758794001A4DBD /* EnemyLosses.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA362F3328758794001A4DBD /* EnemyLosses */ = {
+			isa = PBXGroup;
+			children = (
+				CA362F3428758794001A4DBD /* AppDelegate.swift */,
+				CA362F3628758794001A4DBD /* SceneDelegate.swift */,
+				CACFA53B288461BD0037388B /* Model */,
+				CACFA53D288461E50037388B /* ViewControllers */,
+				CA362F5B2876CC38001A4DBD /* Resourses */,
+				CA362F3A28758794001A4DBD /* Main.storyboard */,
+				CA362F3F2875879D001A4DBD /* LaunchScreen.storyboard */,
+				CA362F422875879D001A4DBD /* Info.plist */,
+			);
+			path = EnemyLosses;
+			sourceTree = "<group>";
+		};
+		CA362F502875ACB4001A4DBD /* RootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CA12ED8928849045004FF221 /* Logic */,
+				CACFA540288462A00037388B /* Views */,
+				CA362F4E2875A629001A4DBD /* RootViewController.swift */,
+			);
+			path = RootViewController;
+			sourceTree = "<group>";
+		};
+		CA362F522875ACF5001A4DBD /* DateDescriptionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CACFA53E288462250037388B /* Views */,
+				CA362F3828758794001A4DBD /* DateDescriptionViewController.swift */,
+			);
+			path = DateDescriptionViewController;
+			sourceTree = "<group>";
+		};
+		CA362F5B2876CC38001A4DBD /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				CA362F5C2876D341001A4DBD /* russia_losses_equipment.json */,
+				CA362F5D2876D341001A4DBD /* russia_losses_personnel.json */,
+				CA362F602876FBF6001A4DBD /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		CA362F68287C7B5E001A4DBD /* TypeDescriptionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CACFA53F2884626B0037388B /* Views */,
+				CA362F69287C7BAD001A4DBD /* TypeDescriptionViewController.swift */,
+			);
+			path = TypeDescriptionViewController;
+			sourceTree = "<group>";
+		};
+		CACFA53B288461BD0037388B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA362F4828758D18001A4DBD /* LossesOfEquipmentsAndPersonnels.swift */,
+				CA362F552875B0F7001A4DBD /* PersonnelLosses.swift */,
+				CA362F532875AE66001A4DBD /* ArmyEquipmentsLosses.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CACFA53D288461E50037388B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA362F502875ACB4001A4DBD /* RootViewController */,
+				CA362F522875ACF5001A4DBD /* DateDescriptionViewController */,
+				CA362F68287C7B5E001A4DBD /* TypeDescriptionViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CACFA53E288462250037388B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA362F4A2875A3C7001A4DBD /* DescriptionByDateTableViewCell.swift */,
+				CA362F4B2875A3C7001A4DBD /* DescriptionByDateTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CACFA53F2884626B0037388B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA362F6B287C7C04001A4DBD /* DescriptionByTypeTableViewCell.swift */,
+				CA362F6C287C7C04001A4DBD /* DescriptionByTypeTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CACFA540288462A00037388B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA362F5728761076001A4DBD /* RootViewControllerCell.swift */,
+				CA362F5828761076001A4DBD /* RootViewControllerCell.xib */,
+				CA362F64287822E5001A4DBD /* ByDateModeTableViewCell.swift */,
+				CA362F65287822E5001A4DBD /* ByDateModeTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA362F3028758794001A4DBD /* EnemyLosses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA362F452875879D001A4DBD /* Build configuration list for PBXNativeTarget "EnemyLosses" */;
+			buildPhases = (
+				CA362F2D28758794001A4DBD /* Sources */,
+				CA362F2E28758794001A4DBD /* Frameworks */,
+				CA362F2F28758794001A4DBD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnemyLosses;
+			productName = TestProjecct;
+			productReference = CA362F3128758794001A4DBD /* EnemyLosses.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA362F2928758794001A4DBD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					CA362F3028758794001A4DBD = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = CA362F2C28758794001A4DBD /* Build configuration list for PBXProject "EnemyLosses" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA362F2828758794001A4DBD;
+			productRefGroup = CA362F3228758794001A4DBD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA362F3028758794001A4DBD /* EnemyLosses */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA362F2F28758794001A4DBD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA362F5E2876D341001A4DBD /* russia_losses_equipment.json in Resources */,
+				CA362F4D2875A3C7001A4DBD /* DescriptionByDateTableViewCell.xib in Resources */,
+				CA362F412875879D001A4DBD /* LaunchScreen.storyboard in Resources */,
+				CA362F6E287C7C04001A4DBD /* DescriptionByTypeTableViewCell.xib in Resources */,
+				CA362F3C28758794001A4DBD /* Main.storyboard in Resources */,
+				CA362F612876FBF6001A4DBD /* Assets.xcassets in Resources */,
+				CA362F67287822E5001A4DBD /* ByDateModeTableViewCell.xib in Resources */,
+				CA362F5A28761076001A4DBD /* RootViewControllerCell.xib in Resources */,
+				CA362F5F2876D341001A4DBD /* russia_losses_personnel.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA362F2D28758794001A4DBD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA362F562875B0F7001A4DBD /* PersonnelLosses.swift in Sources */,
+				CA362F3928758794001A4DBD /* DateDescriptionViewController.swift in Sources */,
+				CA362F4C2875A3C7001A4DBD /* DescriptionByDateTableViewCell.swift in Sources */,
+				CA362F5928761076001A4DBD /* RootViewControllerCell.swift in Sources */,
+				CA362F4F2875A629001A4DBD /* RootViewController.swift in Sources */,
+				CACFA53A288083390037388B /* CellFactoryForRootVC.swift in Sources */,
+				CA362F542875AE66001A4DBD /* ArmyEquipmentsLosses.swift in Sources */,
+				CA362F4928758D18001A4DBD /* LossesOfEquipmentsAndPersonnels.swift in Sources */,
+				CA362F6A287C7BAD001A4DBD /* TypeDescriptionViewController.swift in Sources */,
+				CA362F66287822E5001A4DBD /* ByDateModeTableViewCell.swift in Sources */,
+				CA362F3528758794001A4DBD /* AppDelegate.swift in Sources */,
+				CA362F3728758794001A4DBD /* SceneDelegate.swift in Sources */,
+				CA362F6D287C7C04001A4DBD /* DescriptionByTypeTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CA362F3A28758794001A4DBD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA362F3B28758794001A4DBD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA362F3F2875879D001A4DBD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA362F402875879D001A4DBD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA362F432875879D001A4DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA362F442875879D001A4DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA362F462875879D001A4DBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EnemyLosses/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iryna.EnemyLosses;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA362F472875879D001A4DBD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EnemyLosses/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.iryna.EnemyLosses;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA362F2C28758794001A4DBD /* Build configuration list for PBXProject "EnemyLosses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA362F432875879D001A4DBD /* Debug */,
+				CA362F442875879D001A4DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA362F452875879D001A4DBD /* Build configuration list for PBXNativeTarget "EnemyLosses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA362F462875879D001A4DBD /* Debug */,
+				CA362F472875879D001A4DBD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA362F2928758794001A4DBD /* Project object */;
+}

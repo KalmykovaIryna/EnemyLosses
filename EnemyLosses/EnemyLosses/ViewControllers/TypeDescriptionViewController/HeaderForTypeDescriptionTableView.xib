@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view tag="-1" contentMode="scaleAspectFill" id="7TX-aT-DOJ" customClass="HeaderForTypeDescriptionTableView" customModule="TestProjecct" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="579" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8iX-6T-RGa" userLabel="BackgroundView">
+                    <rect key="frame" x="5" y="5" width="569" height="130"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ВТРАТИ ПРОТИВНИКА ЗА ТИПОМ:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjG-pJ-4Ys">
+                            <rect key="frame" x="0.0" y="5" width="569" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="y7f-jl-ge7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NF5-RW-H6X">
+                            <rect key="frame" x="16" y="55" width="90" height="70"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="70" id="eCN-fR-Au5"/>
+                                <constraint firstAttribute="width" constant="90" id="hsh-xS-wDo"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ГЕЛІКОПТЕРИ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IZU-Hz-z4g">
+                            <rect key="frame" x="122" y="55" width="139.5" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="tUq-b2-PCQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Helicopters" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y84-fg-MXZ">
+                            <rect key="frame" x="122" y="89" width="87" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="7jQ-LI-Pyd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.08235294118" green="0.10980392160000001" blue="0.050980392159999999" alpha="0.543744826192053" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="NF5-RW-H6X" secondAttribute="bottom" constant="5" id="0RU-bX-HXI"/>
+                        <constraint firstItem="IZU-Hz-z4g" firstAttribute="top" secondItem="hjG-pJ-4Ys" secondAttribute="bottom" constant="10" id="1N5-CH-Thf"/>
+                        <constraint firstItem="NF5-RW-H6X" firstAttribute="top" secondItem="hjG-pJ-4Ys" secondAttribute="bottom" constant="10" id="6FR-ch-QXr"/>
+                        <constraint firstItem="hjG-pJ-4Ys" firstAttribute="top" secondItem="8iX-6T-RGa" secondAttribute="top" constant="5" id="Aaz-Lw-ZKQ"/>
+                        <constraint firstItem="NF5-RW-H6X" firstAttribute="leading" secondItem="8iX-6T-RGa" secondAttribute="leading" constant="16" id="B6C-3I-Bme"/>
+                        <constraint firstAttribute="trailing" secondItem="hjG-pJ-4Ys" secondAttribute="trailing" id="Bin-dm-C2k"/>
+                        <constraint firstItem="hjG-pJ-4Ys" firstAttribute="leading" secondItem="8iX-6T-RGa" secondAttribute="leading" id="lLS-5j-Ns3"/>
+                        <constraint firstItem="IZU-Hz-z4g" firstAttribute="leading" secondItem="NF5-RW-H6X" secondAttribute="trailing" constant="16" id="mB7-Ky-Nv7"/>
+                        <constraint firstItem="y84-fg-MXZ" firstAttribute="top" secondItem="IZU-Hz-z4g" secondAttribute="bottom" constant="10" id="sBO-Sl-O9e"/>
+                        <constraint firstItem="y84-fg-MXZ" firstAttribute="leading" secondItem="NF5-RW-H6X" secondAttribute="trailing" constant="16" id="vlf-N6-r0o"/>
+                        <constraint firstAttribute="height" constant="130" id="w0A-h5-s58"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="ngq-XN-5Bu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="8iX-6T-RGa" firstAttribute="leading" secondItem="ngq-XN-5Bu" secondAttribute="leading" constant="5" id="4hM-Hl-UfF"/>
+                <constraint firstItem="8iX-6T-RGa" firstAttribute="top" secondItem="7TX-aT-DOJ" secondAttribute="top" constant="5" id="COA-tx-6gg"/>
+                <constraint firstAttribute="bottom" secondItem="8iX-6T-RGa" secondAttribute="bottom" constant="5" id="Cnv-ZN-sOU"/>
+                <constraint firstItem="ngq-XN-5Bu" firstAttribute="trailing" secondItem="8iX-6T-RGa" secondAttribute="trailing" constant="5" id="dfb-JM-Mlw"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="430.3125" y="-246.12676056338029"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="60" id="KGk-i7-Jjw" customClass="ByDateModeTableViewCell" customModule="EnemyLosses" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="308" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="308" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" restorationIdentifier="dateCell" translatesAutoresizingMaskIntoConstraints="NO" id="abN-m3-9bC" userLabel="backgroundViewCell">
+                        <rect key="frame" x="5" y="5" width="298" height="50"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWD-vy-tHr" userLabel="dateLabel">
+                                <rect key="frame" x="20" y="10" width="44.5" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDP-Q3-sml">
+                                <rect key="frame" x="234" y="6" width="48" height="38"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES"/>
+                                </accessibility>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="next"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.082352941176470587" green="0.10980392156862745" blue="0.050980392156862744" alpha="0.55137624172185429" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="bDP-Q3-sml" firstAttribute="centerY" secondItem="abN-m3-9bC" secondAttribute="centerY" id="2p5-0y-NQs"/>
+                            <constraint firstItem="BWD-vy-tHr" firstAttribute="leading" secondItem="abN-m3-9bC" secondAttribute="leading" constant="20" id="65f-KB-8ee"/>
+                            <constraint firstAttribute="height" constant="50" id="B3d-69-UbR"/>
+                            <constraint firstAttribute="bottom" secondItem="BWD-vy-tHr" secondAttribute="bottom" constant="10" id="Pgg-fH-U9u"/>
+                            <constraint firstItem="BWD-vy-tHr" firstAttribute="top" secondItem="abN-m3-9bC" secondAttribute="top" constant="10" id="UN3-Bu-d6k"/>
+                            <constraint firstAttribute="trailing" secondItem="bDP-Q3-sml" secondAttribute="trailing" constant="16" id="jHg-Gp-E9k"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="abN-m3-9bC" secondAttribute="trailing" constant="5" id="7Sr-6Q-fjJ"/>
+                    <constraint firstItem="abN-m3-9bC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="HdL-94-F5e"/>
+                    <constraint firstItem="abN-m3-9bC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="aM2-ze-DwJ"/>
+                    <constraint firstItem="abN-m3-9bC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="l3z-Pl-yEU"/>
+                    <constraint firstItem="abN-m3-9bC" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qWy-o8-0Hz"/>
+                    <constraint firstAttribute="bottom" secondItem="abN-m3-9bC" secondAttribute="bottom" constant="5" id="uEV-Xp-cnf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cellBackgroundView" destination="abN-m3-9bC" id="flF-tC-Qeo"/>
+                <outlet property="dateLabel" destination="BWD-vy-tHr" id="JrV-Gy-Vpc"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="58.928571428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="next" width="24" height="24"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
